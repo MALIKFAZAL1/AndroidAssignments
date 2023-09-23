@@ -3,4 +3,13 @@
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">je suis un bouton!</string>
+    <string name="loginText">Se connecter</string>
+    <string name="passwordText">Mot de passe</string>
+    <string name="loginPage">Page de connexion</string>
+    <string name="mainPage">la page principale</string>
+    <string name="BackPage">Retour à la page précédente</string>
+    <string name="radioButton">Bouton Radio</string>
+    <string name="checkBox">Box à cocher</string>
+    <string name="whatText">Qu\'est-ce que cela fait?</string>
+    <string name="imageBox">Boîte d\'images</string>
 </resources>

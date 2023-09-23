@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListItemsActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
