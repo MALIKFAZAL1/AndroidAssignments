@@ -12,4 +12,13 @@
     <string name="checkBox">Box à cocher</string>
     <string name="whatText">Qu\'est-ce que cela fait?</string>
     <string name="imageBox">Boîte d\'images</string>
+    <string name="listItems">List Items Page</string>
+    <string name="ok">OUI</string>
+    <string name="cancel">NON</string>
+    <string name="dialog_message">QUITTER?</string>
+    <string name="dialog_title">Voulez-vous quitter?</string>
+    <string name="switchOn">L\'interrupteur est activé</string>
+    <string name="switchOff">Le commutateur est éteint</string>
+    <string name="buttonClick">Bouton cliqué</string>
+    <string name="invalidEP">E-mail ou mot de passe invalide</string>
 </resources>

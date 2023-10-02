@@ -11,4 +11,13 @@
     <string name="checkBox">Check Box</string>
     <string name="whatText">What does this do?</string>
     <string name="imageBox">Image Box</string>
+    <string name="listItems">List Items Page</string>
+    <string name="ok">YES</string>
+    <string name="cancel">NO</string>
+    <string name="dialog_message">EXIT?</string>
+    <string name="dialog_title">Do you want to exit?</string>
+    <string name="switchOn">Switch is turned On</string>
+    <string name="switchOff">Switch is turned Off</string>
+    <string name="buttonClick">Button clicked</string>
+    <string name="invalidEP">Invalid email or password</string>
 </resources>

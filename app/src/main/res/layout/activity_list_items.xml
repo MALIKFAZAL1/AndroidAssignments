@@ -7,7 +7,7 @@
     tools:context=".ListItemsActivity">
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/design_default_color_surface"
         tools:layout_editor_absoluteX="1dp"
@@ -56,7 +56,7 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:contentDescription="@string/imageBox"
             android:gravity="fill"
@@ -83,5 +83,7 @@
         tools:layout_editor_absoluteX="231dp"
         tools:layout_editor_absoluteY="240dp"
         tools:ignore="MissingConstraints" />
+
     </androidx.gridlayout.widget.GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

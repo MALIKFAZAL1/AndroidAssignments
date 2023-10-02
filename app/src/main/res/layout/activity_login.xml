@@ -58,11 +58,5 @@
             android:text="@string/loginText"
             tools:ignore="VisualLintButtonSize" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mainPage"
-            tools:ignore="VisualLintButtonSize" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
