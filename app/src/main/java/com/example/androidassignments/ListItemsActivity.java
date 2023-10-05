@@ -155,12 +155,15 @@ public class ListItemsActivity extends AppCompatActivity {
                         Intent resIntent=new Intent();
                         resIntent.putExtra("Response","ListItemsActivity passed");
                         setResult(Activity.RESULT_OK,resIntent);
+                        print(getResources().getString(R.string.exit));
                         finish();
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
+                    public void onClick(DialogInterface dialog,int id)
+                    {
                         dialog.dismiss();
+                        print(getResources().getString(R.string.dontExit));
                     }
                 })
                 .show();

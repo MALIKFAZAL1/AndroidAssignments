@@ -20,4 +20,6 @@
     <string name="switchOff">Switch is turned Off</string>
     <string name="buttonClick">Button clicked</string>
     <string name="invalidEP">Invalid email or password</string>
+    <string name="exit">Exited</string>
+    <string name="dontExit">Did not Exit</string>
 </resources>
