@@ -23,4 +23,7 @@
     <string name="invalidEP">E-mail ou mot de passe invalide</string>
     <string name="exit">Quité</string>
     <string name="dontExit">N\'a pas quitté</string>
+    <string name="startChatButton">Démarrer la discussion</string>
+    <string name="typeMsg">Tapez un message ici</string>
+    <string name="sendButton">Envoyer</string>
 </resources>

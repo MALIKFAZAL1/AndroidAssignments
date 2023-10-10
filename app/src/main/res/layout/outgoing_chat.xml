@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- TextView for outgoing message text -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="Outgoing message text"
+        android:gravity="end"
+        android:textColor="#000" />
+
+    <!-- ImageView for outgoing message icon or image -->
+    <ImageView
+        android:id="@+id/outgoingImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/sym_call_outgoing"/>
+</LinearLayout>

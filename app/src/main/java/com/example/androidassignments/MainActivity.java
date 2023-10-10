@@ -1,21 +1,19 @@
 package com.example.androidassignments;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.autofill.TextValueSanitizer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-private Button activityListButton;
+private Button activityListButton,startChatButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,6 +22,7 @@ private Button activityListButton;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         activityListButton =(Button) findViewById(R.id.button3);
+        startChatButton=(Button) findViewById(R.id.startChatBtn);
         //Log.i();
 
         activityListButton.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +31,16 @@ private Button activityListButton;
                 Log.i("MainActivity","onClick");
                 print(getResources().getString(R.string.buttonClick));
                 Intent intent = new Intent(MainActivity.this,ListItemsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        startChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("MainActivity","User clicked Start Chat Button");
+                print(getResources().getString(R.string.buttonClick));
+                Intent intent = new Intent(MainActivity.this,chatWindowActivity.class);
                 startActivity(intent);
             }
         });

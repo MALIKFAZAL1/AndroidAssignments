@@ -22,4 +22,7 @@
     <string name="invalidEP">Invalid email or password</string>
     <string name="exit">Exited</string>
     <string name="dontExit">Did not Exit</string>
+    <string name="startChatButton">Start Chat</string>
+    <string name="typeMsg">Type message here</string>
+    <string name="sendButton">Send</string>
 </resources>
