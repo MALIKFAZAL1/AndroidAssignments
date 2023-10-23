@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:padding="8dp"
-        android:text="Incoming message text"
+        android:text="@string/In"
         android:gravity="start"
         android:textColor="#000" />
 </LinearLayout>

@@ -37,7 +37,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:text="@string/sendButton" />
+            android:text="@string/sendButton"
+            style="@style/buttonStyl"/>
 
     </RelativeLayout>
 

@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-private Button activityListButton,startChatButton;
+private Button activityListButton,startChatButton,toolBarBtn;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -23,6 +23,7 @@ private Button activityListButton,startChatButton;
         setContentView(R.layout.activity_main);
         activityListButton =(Button) findViewById(R.id.button3);
         startChatButton=(Button) findViewById(R.id.startChatBtn);
+        toolBarBtn=(Button) findViewById(R.id.startToolbarBtn);
         //Log.i();
 
         activityListButton.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,16 @@ private Button activityListButton,startChatButton;
                 Log.i("MainActivity","User clicked Start Chat Button");
                 print(getResources().getString(R.string.buttonClick));
                 Intent intent = new Intent(MainActivity.this,chatWindowActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        toolBarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("MainActivity","User clicked Tool bar Button");
+                print(getResources().getString(R.string.buttonClick));
+                Intent intent = new Intent(MainActivity.this,TestToolbar.class);
                 startActivity(intent);
             }
         });

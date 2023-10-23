@@ -25,4 +25,14 @@
     <string name="startChatButton">Start Chat</string>
     <string name="typeMsg">Type message here</string>
     <string name="sendButton">Send</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Okay">Okay</string>
+    <string name="In">Incoming Message</string>
+    <string name="Out">Outgoing Message</string>
+
+
 </resources>

@@ -28,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/labelTv"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        style="@style/buttonStyl"/>
 
     <Button
         android:id="@+id/startChatBtn"
@@ -39,6 +40,18 @@
         tools:layout_editor_absoluteX="149dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/buttonStyl"/>
+    <Button
+        android:id="@+id/startToolbarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_test_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/startChatBtn"
+        tools:layout_editor_absoluteX="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/buttonStyl"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
