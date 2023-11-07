@@ -8,12 +8,12 @@ public class chatTest {
 
     @Test
     public void testFormatMessage() {
-        String inputMessage = "Heyy!!";
+
+        String inputMessage = "Helloo!!";
         String formattedMessage = chatTest.formatMessage(inputMessage);
-        assertEquals("Heyy!!", formattedMessage);
+        assertEquals("Helloo!!", formattedMessage);
     }
     public static String formatMessage(String message) {
-        // Some logic to format the message (e.g., adding timestamps)
         return message;
     }
 
