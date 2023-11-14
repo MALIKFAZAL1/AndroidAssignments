@@ -7,6 +7,8 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -17,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:networkSecurityConfig="@xml/network_security_config">
         <activity
             android:name=".TestToolbar"
             android:exported="false"
@@ -25,6 +28,10 @@
             android:theme="@style/Theme.AndroidAssignments" />
         <activity
             android:name=".chatWindowActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WeatherForecast"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity

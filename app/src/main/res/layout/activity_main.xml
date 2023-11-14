@@ -53,5 +53,25 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         style="@style/buttonStyl"/>
+    <Button
+        android:id="@+id/weatherBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weatherBtn"
+        app:layout_constraintTop_toBottomOf="@+id/startToolbarBtn"
+        tools:layout_editor_absoluteX="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/buttonStyl"/>
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/weatherBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="149dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

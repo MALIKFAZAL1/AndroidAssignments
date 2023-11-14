@@ -33,6 +33,10 @@
     <string name="Okay">Okay</string>
     <string name="In">Incoming Message</string>
     <string name="Out">Outgoing Message</string>
+    <string name="weatherBtn">Weather Forecast Button</string>
+    <string name="curTemp">Current Temperature</string>
+    <string name="minTemp">Minimum Temperature</string>
+    <string name="maxTemp">Maximum Temperature</string>
 
 
 </resources>

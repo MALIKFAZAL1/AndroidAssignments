@@ -34,4 +34,8 @@
     <string name="Okay">D\'accord</string>
     <string name="In">Message entrant</string>
     <string name="Out">Message sortant</string>
+    <string name="weatherBtn">Weather Forecast Button</string>
+    <string name="curTemp">Current Temperature</string>
+    <string name="minTemp">Minimum Temperature</string>
+    <string name="maxTemp">Maximum Temperature</string>
 </resources>

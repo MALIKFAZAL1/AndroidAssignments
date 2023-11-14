@@ -1,0 +1,56 @@
+<!-- activity_weather_forecast.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView for current weather -->
+    <ImageView
+        android:id="@+id/weatherImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"/>
+
+    <!-- TextView for current temperature -->
+    <TextView
+        android:id="@+id/currentTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/curTemp"
+        android:layout_below="@id/weatherImageView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView for min temperature -->
+    <TextView
+        android:id="@+id/minTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minTemp"
+        android:layout_below="@id/currentTempTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- TextView for max temperature -->
+    <TextView
+        android:id="@+id/maxTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maxTemp"
+        android:layout_below="@id/minTempTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maxTempTextView"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
