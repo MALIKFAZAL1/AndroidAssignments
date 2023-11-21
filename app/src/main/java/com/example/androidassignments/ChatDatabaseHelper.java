@@ -1,6 +1,9 @@
 package com.example.androidassignments;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -35,5 +38,33 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
         Log.i("ChatDatabaseHelper","Calling onUpgrade,oldVersion="+oldVer+"newVersion="+newVer);
     }
+
+    @SuppressLint("Range")
+    public MessageDetails getMessageDetails(long messageId) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selection = KEY_ID + "=?";
+        String[] selectionArgs = {String.valueOf(messageId)};
+        MessageDetails messageDetails = new MessageDetails();
+        String[] projection = {KEY_ID, KEY_MESSAGE};
+
+        Cursor cursor = db.query(TABLE_NAME, projection, selection, selectionArgs, null, null, null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            messageDetails.setId(cursor.getLong(cursor.getColumnIndex(KEY_ID)));
+            messageDetails.setContent(cursor.getString(cursor.getColumnIndex(KEY_MESSAGE)));
+            cursor.close();
+        }
+
+        db.close();
+        return messageDetails;
+    }
+    public void deleteMessage(int messageId) {
+        try (SQLiteDatabase db = this.getWritableDatabase()) {
+            db.delete(TABLE_NAME, KEY_ID + "=?", new String[]{String.valueOf(messageId)});
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
 

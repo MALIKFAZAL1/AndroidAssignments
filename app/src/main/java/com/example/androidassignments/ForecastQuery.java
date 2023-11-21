@@ -13,7 +13,7 @@ import java.net.URL;
 
 public class ForecastQuery extends AsyncTask<String, Integer, String> {
 
-    private WeatherForecast weatherForecast; // Reference to the WeatherForecast activity
+    private WeatherForecast weatherForecast;
 
     public ForecastQuery(WeatherForecast weatherForecast) {
         this.weatherForecast = weatherForecast;

@@ -31,6 +31,16 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".MessageDetails"
+            android:exported="false"
+            android:parentActivityName=".chatWindowActivity" />
+        <activity
+            android:name=".MessageDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".chatWindowActivity" />
+
+
+        <activity
             android:name=".WeatherForecast"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
